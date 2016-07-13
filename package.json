@@ -1,0 +1,37 @@
+{
+  "name": "typescript-mocha-istanbul-boilerplate",
+  "version": "1.0.0",
+  "description": "An example node project to produce coverage of TypeScript sources using Mocha.",
+  "scripts": {
+    "postinstall": "typings install dt~mocha dt~require dt~chai --save --global",
+    "test": "mocha --compilers ts:ts-node/register src/**/*.spec.ts",
+    "test:coverage": "ts-node node_modules/istanbul/lib/cli.js cover -e .ts  -x \"*.d.ts\" -x \"*.spec.ts\" _mocha -- --compilers ts:ts-node/register -R spec src/**/*.spec.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Izhaki/Typescript-Mocha-Istanbul-Boilerplate.git"
+  },
+  "keywords": [
+    "typescript",
+    "mocha",
+    "istanbul",
+    "sourcemaps",
+    "node",
+    "npm scripts",
+    "tsc"
+  ],
+  "author": "Izhaki",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^1.1.0-alpha.1",
+    "mocha": "^2.5.3",
+    "ts-node": "^0.9.3",
+    "typescript": "^1.8.10",
+    "typings": "^1.3.1"
+  },
+  "bugs": {
+    "url": "https://github.com/Izhaki/Typescript-Mocha-Istanbul-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/Izhaki/Typescript-Mocha-Istanbul-Boilerplate#readme"
+}
