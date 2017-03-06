@@ -2,7 +2,7 @@
 An example node project to produce coverage of TypeScript sources using:
 
 - Mocha
-- Istanbul
+- Istanbul ([nyc](https://github.com/istanbuljs/nyc))
 - tsc
 - npm scripts
 
@@ -13,4 +13,14 @@ The coverage report shows the typescript (rather than transpiled) code. That is,
         
 Sample output:
 
-![image](https://cloud.githubusercontent.com/assets/880132/16820312/4fe60e10-4948-11e6-8c5a-ddc9376d3918.png)    
+```sh
+---------------|----------|----------|----------|----------|----------------|
+File           |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines |
+---------------|----------|----------|----------|----------|----------------|
+All files      |      100 |      100 |      100 |      100 |                |
+ Point.spec.ts |      100 |      100 |      100 |      100 |                |
+ Point.ts      |      100 |      100 |      100 |      100 |                |
+ Rect.spec.ts  |      100 |      100 |      100 |      100 |                |
+ Rect.ts       |      100 |      100 |      100 |      100 |                |
+---------------|----------|----------|----------|----------|----------------|
+```

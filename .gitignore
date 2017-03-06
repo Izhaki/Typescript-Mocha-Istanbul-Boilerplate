@@ -1,4 +1,3 @@
 node_modules/
 coverage/
-typings/
-typings.json
+.nyc_output
